@@ -176,6 +176,8 @@ echo "
 
                     echo "<p class='text'>Aktualna liczba punktów: <strong>" . $points . "</strong></p>";
                     echo "<p class='text'>Pytań do końca: <strong>" . $questions_left . "</strong></p>";
+                    echo "<div class='guess-mage' style='background-image: url(\"images/kamila.JPG\")'></div>";
+                    echo "<p class='text'>Da Pan 5? Pozdrawiam ;* </p>
 
                     echo "<input name='points' type='hidden' value='" . $points . "'/>";
                     echo "<input name='last_question' type='hidden' value='" . ($question) . "'/>";
