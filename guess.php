@@ -168,16 +168,16 @@ echo "
                     // koniec rundy
                     echo "
                     <p class='text'>Zdobyta liczba punktów: <strong>" . $points . "</strong>. Gratulacje!</p>
-                    <a class='return' href='/index.php'>Powrót do strony głównej</a>
-                    ";
+                    <a class='return' href='/index.php'>Powrót do strony głównej</a>";
+                    echo "<div class='guess-mage' style='background-image: url(\"images/kamila.JPG\")'></div>";
+                    echo "<p class='text'>Da Pan 5? Pozdrawiam ;* </p>"
                 } else {
                     // losujemy kolejne pytanie
                     $question = rand(0, $max_questions - 1);
 
                     echo "<p class='text'>Aktualna liczba punktów: <strong>" . $points . "</strong></p>";
                     echo "<p class='text'>Pytań do końca: <strong>" . $questions_left . "</strong></p>";
-                    echo "<div class='guess-mage' style='background-image: url(\"images/kamila.JPG\")'></div>";
-                    echo "<p class='text'>Da Pan 5? Pozdrawiam ;* </p>
+                    
 
                     echo "<input name='points' type='hidden' value='" . $points . "'/>";
                     echo "<input name='last_question' type='hidden' value='" . ($question) . "'/>";
