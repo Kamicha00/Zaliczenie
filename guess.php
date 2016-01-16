@@ -175,9 +175,9 @@ echo "
                     // losujemy kolejne pytanie
                     $questions_asked = "";
                     $question = -1;
-                    if (!empty($_POST['$questions_asked']))
+                    if (!empty($_POST['questions_asked']))
                     {
-                        $questions_asked = $_POST['$questions_asked'];
+                        $questions_asked = $_POST['questions_asked'];
                         $questionArray = arrayMap('intval', explode(",", $questionArray));
                         $possiblequestion = rand(0, $max_questions - 1);
                         $question = -1;
