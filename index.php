@@ -21,7 +21,7 @@
                 <div class='type'>
                     <a href='/guess.php?type=places'>
                         <div class='background-image' style='background-image: url("images/places.jpg");'></div>
-                        <p class='text'>Znane miejsca</p>
+                        <p class='text'>Znane miasta</p>
                     </a>
                 </div>
 

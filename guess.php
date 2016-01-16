@@ -12,7 +12,11 @@ $config = array(
             "image_name" => "shining.jpg",
             "answers" => array("lśnienie", "lsnienie", "shining")
         ),
-
+        array(
+            "proper_name" => "Pulp Fiction",
+            "image_name" => "pulp.jpg",
+            "answers" => array("pulp fiction")
+        )
     ),
 
     "places" => array(
@@ -22,9 +26,14 @@ $config = array(
             "answers" => array("watykan", "miasto watykan", "vatican city", "vatican")
         ),
         array(
-            "proper_name" => "Tytanik",
-            "image_name" => "titanic.jpg",
-            "answers" => array("tytanik", "tytanic")
+            "proper_name" => "Warszawa",
+            "image_name" => "warszawa.jpg",
+            "answers" => array("warszawa")
+        ),
+        array(
+            "proper_name" => "Londyn",
+            "image_name" => "londyn.jpg",
+            "answers" => array("londyn", "london")
         )
     ),
 
@@ -35,9 +44,14 @@ $config = array(
             "answers" => array("angelina", "jolie", "angelina jolie", "jolie angelina")
         ),
         array(
-            "proper_name" => "Tytanik",
-            "image_name" => "titanic.jpg",
-            "answers" => array("tytanik", "tytanic")
+            "proper_name" => "Olek",
+            "image_name" => "olek.jpg",
+            "answers" => array("kwachu", "kwasniewski", "aleksander kwaśniewski", "aleksander kwasniewski", "kwasniewski aleksander", "olek")
+        ),
+        array(
+            "proper_name" => "Wodecki",
+            "image_name" => "wodecki.jpg",
+            "answers" => array("wodecki", "zbigniew", "zbigniew wodecki", "wodecki zbigniew")
         )
     )
 );
