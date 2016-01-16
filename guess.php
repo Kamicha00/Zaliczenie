@@ -174,6 +174,7 @@ echo "
                 } else {
                     // losujemy kolejne pytanie
                     $questions_asked = "";
+                    $question = -1;
                     if (!empty($_POST['$questions_asked']))
                     {
                         $questions_asked = $_POST['$questions_asked'];
@@ -182,11 +183,11 @@ echo "
                         $question = -1;
                         while($question == -1)
                         {
-                            $found = FALSE;
+                            $found = false;
                             foreach($questionArray as $value)
                             {
                                 if($value == $possiblequestion)
-                                $found = TRUE;
+                                $found = true;
                             }
                             if(!$found)
                                 $question = $possiblequestion;
