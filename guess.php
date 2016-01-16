@@ -169,8 +169,8 @@ echo "
                     echo "
                     <p class='text'>Zdobyta liczba punktów: <strong>" . $points . "</strong>. Gratulacje!</p>
                     <a class='return' href='/index.php'>Powrót do strony głównej</a>";
-                    echo "<div class='guess-mage' style='background-image: url(\"images/kamila.JPG\")'></div>";
-                    echo "<p class='text'>Da Pan 5? Pozdrawiam ;* </p>"
+                    echo "<div class='guess-image' style='background-image: url(\"images/kamila.JPG\")'></div>";
+                    echo "<p class='text'>Da Pan 5? Pozdrawiam ;* </p>";
                 } else {
                     // losujemy kolejne pytanie
                     $question = rand(0, $max_questions - 1);
