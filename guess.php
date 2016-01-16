@@ -195,7 +195,7 @@ echo "
                     //}
                     //else
                     //{
-                        $question = rand(0, $max_questions - 1);
+                        $question = $questions_left - 1;//rand(0, $max_questions - 1);
                     //}
 
                     echo "<p class='text'>Aktualna liczba punktów: <strong>" . $points . "</strong></p>";
