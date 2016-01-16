@@ -173,30 +173,30 @@ echo "
                     echo "<p class='text'>Da Pan 5? Pozdrawiam ;* </p>";
                 } else {
                     // losujemy kolejne pytanie
-                    $questions_asked = "";
-                    $question = -1;
-                    if (!empty($_POST['questions_asked']))
-                    {
-                        $questions_asked = $_POST['questions_asked'];
-                        $questionArray = arrayMap('intval', explode(",", $questionArray));
-                        $possiblequestion = rand(0, $max_questions - 1);
-                        $question = -1;
-                        while($question == -1)
-                        {
-                            $found = false;
-                            foreach($questionArray as $value)
-                            {
-                                if($value == $possiblequestion)
-                                $found = true;
-                            }
-                            if(!$found)
-                                $question = $possiblequestion;
-                        }
-                    }
-                    else
-                    {
+                    //$questions_asked = "";
+                    //$question = -1;
+                    //if (!empty($_POST['questions_asked']))
+                    //{
+                     //   $questions_asked = $_POST['questions_asked'];
+                        //$questionArray = arrayMap('intval', explode(",", $questionArray));
+                        //$possiblequestion = rand(0, $max_questions - 1);
+                        //$question = -1;
+                        //while($question == -1)
+                        //{
+                          //  $found = false;
+                            //foreach($questionArray as $value)
+                            //{
+                              //  if($value == $possiblequestion)
+                                //$found = true;
+                            //}
+                            //if(!$found)
+                              //  $question = $possiblequestion;
+                        //}
+                    //}
+                    //else
+                    //{
                         $question = rand(0, $max_questions - 1);
-                    }
+                    //}
 
                     echo "<p class='text'>Aktualna liczba punktów: <strong>" . $points . "</strong></p>";
                     echo "<p class='text'>Pytań do końca: <strong>" . $questions_left . "</strong></p>";
@@ -205,7 +205,7 @@ echo "
                     echo "<input name='points' type='hidden' value='" . $points . "'/>";
                     echo "<input name='last_question' type='hidden' value='" . ($question) . "'/>";
                     echo "<input name='questions_left' type='hidden' value='" . ($questions_left - 1) . "'/>";
-                    echo "<input name='questions_asked' type='hidden' value='".($questions_asked) .",".($question) "'/>";
+                    //echo "<input name='questions_asked' type='hidden' value='".($questions_asked) .",".($question) "'/>";
 
                     echo "<div class='guess-image' style='background-image: url(\"images/" . $config[$game_type][$question]["image_name"] . "\")'></div>";
                     echo "<input class='text-input' name='answer' type='text'/>";
